@@ -19,7 +19,7 @@ public class Exer2 {
 		
 		for(int x=0; x < 2; x++)
 		{
-			for(int y=1; y < 3; y++)
+			for(int y=x+1; y < 3; y++)
 			{
 				if(numero[y] < numero[x])
 				{
