@@ -49,6 +49,7 @@ public class Menu {
 				else if(menuOpcao.equalsIgnoreCase("6"))
 				{
 					JOptionPane.showMessageDialog(null,"Agradecemos por escolher o Banco Solícite -  G6! Tenha um ótimo dia!!!\n","Agradecimento",JOptionPane.INFORMATION_MESSAGE);
+					System.exit(0);
 				}
 				else
 				{
