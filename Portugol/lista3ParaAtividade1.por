@@ -2,42 +2,42 @@ programa
 {
 	
 	funcao inicio()
-	{	
+	{	
 		const inteiro habitantes = 20
-		real salario[habitantes+1]
-		inteiro filhos[habitantes+1]
+		real salario[habitantes]
+		inteiro filhos[habitantes]
 		real percentualSalario
 		inteiro contador = 0
 		real contador2 = 0.0
 		real mediaSalario = 0.0
 		real maiorSalario = 0.0
 		real mediaFilhos = 0.0
-		para(contador = 1; contador <= habitantes; contador++)
+		para(contador = 0; contador <= habitantes; contador++)
 		{
-			escreva("Digite o ",contador," Salario R$")
+			escreva("Digite o ",contador+1," Salario R$")
 			leia(salario[contador])
 			
-			escreva("Digite quantos filhos o ",contador," habitante tem:")
+			escreva("Digite quantos filhos o ",contador+1," habitante tem:")
 			leia(filhos[contador])
 			limpa()
 		}
 		
-		para(contador = 1; contador <= habitantes; contador++)
+		para(contador = 0; contador <= habitantes; contador++)
 		{
 			mediaSalario = mediaSalario + salario[contador]
 		}
 
 		mediaSalario = mediaSalario/habitantes
 
-		para(contador = 1; contador <= habitantes; contador++)
+		para(contador = 0; contador <= habitantes; contador++)
 		{
 			mediaFilhos = mediaFilhos + filhos[contador]
 		}
 		
 		mediaFilhos = mediaFilhos/habitantes
 
-		maiorSalario = salario[1]
-		para(contador = 1; contador <= habitantes; contador++)
+		maiorSalario = salario[0]
+		para(contador = 0; contador <= habitantes; contador++)
 		{
 			se(maiorSalario <= salario[contador])
 				{
@@ -45,7 +45,7 @@ programa
 				}
 		}
 
-		para(contador = 1; contador <= habitantes; contador++)
+		para(contador = 0; contador <= habitantes; contador++)
 		{
 			se(salario[contador] <= 100)
 			{
@@ -67,7 +67,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 70; 
+ * @POSICAO-CURSOR = 865; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
