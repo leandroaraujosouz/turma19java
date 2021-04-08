@@ -53,7 +53,7 @@ public class Menu {
 				}
 				else
 				{
-					JOptionPane.showMessageDialog(null,"Opção inválida, tente realizar outra operação.\n","Atenção",JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null,"Opção inválida, tente realizar outra operação.\n","Atenção",JOptionPane.INFORMATION_MESSAGE);
 				}
 								
 			}while(menuOpcao.equalsIgnoreCase("6") == false);

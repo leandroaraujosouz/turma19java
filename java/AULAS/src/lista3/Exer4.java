@@ -37,6 +37,7 @@ public class Exer4 {
 		{
 			System.out.print("Digite a idade: ");
 			idade = leia.nextInt();
+			
 			do
 			{
 				System.out.print("Sexo:\n1 - Feminino\n2 - Masculino\n3 - Outros\nDigite uma das opções: ");
