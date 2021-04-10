@@ -1,20 +1,48 @@
 package lista5OOP;
 
-import java.io.IOException;
-import java.util.ArrayList;
+import java.util.Scanner;
+
+
 
 public class ApplicationLoja {
 	
-	public static void main(String args[]) throws IOException
+	public static void main(String args[]) 
 	{
-		Produto produto = new Produto("TV","45646",2000);
-		ArrayList <Produto> listaPro = new ArrayList<Produto>();
-		listaPro.add(produto);
-		produto.setDescricao("PC");
-		produto.setValorUnitario(5000);
+		 Scanner leia = new Scanner(System.in);
+		 Produto prod = new Produto();
+		 char opcao;
+		do {
+			do {
+				System.out.println("Menu");
+				System.out.println("1 - Cadastro Produtos\n2 - Remove Produtos\n3 - Atualiza Produtos\n4 - Mostrar Produto\n5 - Sair");
+				System.out.print("Digite uma opção: ");
+				opcao = leia.next().charAt(0);
+				if(opcao != '1' && opcao != '2' && opcao != '3' && opcao != '4' && opcao != '5')
+				{
+					System.out.println("Opção invalida!!! Tente novamente");
+				}
+			}while(opcao != '1' && opcao != '2' && opcao != '3' && opcao != '4' && opcao != '5');
+			
+			if(opcao == '1')
+			{
+				prod.cadastrar();
+			}
+			else if(opcao == '2')
+			{
+				prod.remove();
+			}
+			else if(opcao == '3')
+			{
+				prod.atualizar();
+			}
+			else if(opcao == '4')
+			{
+				prod.mostrar();
+			}
+			
+		}while(opcao != '5');	
 		
-		listaPro.add(produto);
-		
-		System.out.println(listaPro.get(1).getDescricao());
 	}
+	
+	
 }

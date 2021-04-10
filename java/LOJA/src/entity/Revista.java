@@ -8,7 +8,14 @@ public class Revista extends Produto{
 		super(descricao, codigo, valorUnitario);
 		this.editora = editora;
 	}
-	
+
+	public String getEditora() {
+		return editora;
+	}
+
+	public void setEditora(String editora) {
+		this.editora = editora;
+	}
 	
 
 }
